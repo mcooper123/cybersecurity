@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Network Diagram](images/network_diagram.png)
+![Network Diagram](images/network_diagram_with_ELK_server.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -94,8 +94,11 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Make sure that `/etc/ansible/hosts` file is updated to correctly reflect your VNet configuration. Search for `[webservers],`and uncomment that line, then list the private IP addresses for your web servers under it. Create a new group `[elk]` and list your ELK server under that.
+- Make sure that `/etc/ansible/hosts` file is updated to correctly reflect your VNet configuration. Search for `[webservers],`and uncomment that line, then list the private IP addresses for your web servers under it. Create a new group `[elk]` and list your ELK server under that. Make sure you put `ansible_python_interpreter=/usr/bin/python3` after each ip address to prevent python errors.![ansible hosts](images/ansible_hosts.PNG)
 - Copy the configuration files for [filebeat](scripts/ansible/filebeat-config.yml) and [metricbeat](scripts/ansible/metricbeat-config.yml) to /etc/ansible/files/ on the control node. You might need to create this directory first.
 - Update each configuration file to include the correct IP address and port for your ELK server in the `Elasticsearch output` (eg. 10.1.0.4:9200) section for both files and the `Kibana` section (eg. 10.1.0.4:5601) for the metricbeat configuration.
+![filebeat config edit](images/filebeat_config_edit.PNG)
+![metricbeat config elasticsearch edit](images/metricbeat_config_edit_elasticsearch.PNG)
+![metricbeat config kibana edit](images/metricbeat_config_edit_kibana.PNG)
 - Run the playbooks for [filebeat](scripts/ansible/filebeat-playbook.yml) and [metricbeat](scripts/ansible/metricbeat-playbook.yml) respectively, and navigate to your [ELK server](http://20.37.6.102:5601/) (eg. http://20.37.6.102:5601) to check that the installation worked as expected. The playbooks to install metricbeat and filebeat know which machines to install on based on the configuration (webservers) of the hosts file in /etc/ansible/ and the host setting in the playbook to match. The ELK server belongs to the `elk` group, not `webservers`, so metricbeat and filebeat won't be installed on it using these playbooks. 
 - HTTP was used as opposed to HTTPS as this was a class project with no budget for installing a TLS certificate to provide HTTPS. I strongly recommend always using HTTPS instead of HTTP in commercial networks for the added security it provides.
