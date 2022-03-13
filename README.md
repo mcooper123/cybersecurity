@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-- [Filebeat playbook](scripts/ansible/deploy_filebeat.yml)
+- [Filebeat playbook](scripts/ansible/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -100,5 +100,5 @@ SSH into the control node and follow the steps below:
 ![filebeat config edit](images/filebeat_config_edit.PNG)
 ![metricbeat config elasticsearch edit](images/metricbeat_config_edit_elasticsearch.PNG)
 ![metricbeat config kibana edit](images/metricbeat_config_edit_kibana.PNG)
-- Run the playbooks for [filebeat](scripts/ansible/filebeat-playbook.yml) and [metricbeat](scripts/ansible/metricbeat-playbook.yml) respectively, and navigate to your [ELK server](http://20.37.6.102:5601/) (eg. http://20.37.6.102:5601) to check that the installation worked as expected. The playbooks to install metricbeat and filebeat know which machines to install on based on the configuration (webservers) of the hosts file in /etc/ansible/ and the host setting in the playbook to match. The ELK server belongs to the `elk` group, not `webservers`, so metricbeat and filebeat won't be installed on it using these playbooks. 
+- Run the playbooks for [filebeat](scripts/ansible/filebeat-playbook.yml) and [metricbeat](scripts/ansible/metricbeat-playbook.yml) respectively, and navigate to your ELK server (eg. http://20.37.6.102:5601) to check that the installation worked as expected. The playbooks to install metricbeat and filebeat know which machines to install on based on the configuration (webservers) of the hosts file in /etc/ansible/ and the host setting in the playbook to match. The ELK server belongs to the `elk` group, not `webservers`, so metricbeat and filebeat won't be installed on it using these playbooks. 
 - HTTP was used as opposed to HTTPS as this was a class project with no budget for installing a TLS certificate to provide HTTPS. I strongly recommend always using HTTPS instead of HTTP in commercial networks for the added security it provides.
