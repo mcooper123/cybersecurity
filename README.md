@@ -94,10 +94,10 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Make sure that `/etc/ansible/hosts` file is updated to correctly reflect your VNet configuration. Search for `[webservers],`and uncomment that line, then list the private IP addresses for your web servers under it. Create a new group `[elk]` and list your ELK server under that. Make sure you put `ansible_python_interpreter=/usr/bin/python3` after each ip address to prevent python errors.![ansible hosts](Ansible/ansible_hosts.PNG)
+- Make sure that `/etc/ansible/hosts` file is updated to correctly reflect your VNet configuration. Search for `[webservers],`and uncomment that line, then list the private IP addresses for your web servers under it. Create a new group `[elk]` and list your ELK server under that. Make sure you put `ansible_python_interpreter=/usr/bin/python3` after each ip address to prevent python errors.
+![ansible hosts](Ansible/ansible_hosts.PNG)
 - Copy the configuration files for [filebeat](Ansible/filebeat-config.yml) and [metricbeat](Ansible/metricbeat-config.yml) to /etc/ansible/files/ on the control node. You might need to create this directory first.
 - Update each configuration file to include the correct IP address and port for your ELK server in the `Elasticsearch output` (eg. 10.1.0.4:9200) section for both files and the `Kibana` section (eg. 10.1.0.4:5601) for the metricbeat configuration.
-
 ![filebeat config edit](Ansible/filebeat_config_edit.PNG)
 ![metricbeat config elasticsearch edit](Ansible/metricbeat_config_edit_elasticsearch.PNG)
 ![metricbeat config kibana edit](Ansible/metricbeat_config_edit_kibana.PNG)
@@ -106,5 +106,8 @@ SSH into the control node and follow the steps below:
   
 ### Kibana investigation
 - Once everything was installed, I intentionally launched failed attempts to hack into my web server through use of a loop command `for i in {1..1000}; do ssh sysadmin@10.0.0.5; done` and `while true; do for i in {5..7}; do ssh sysadmin@10.0.0.$i; done; done` from my jump box server. The reason this failed is because the valid ssh key was generated within the ansible container on the jump box, not directly in the jump box itself. Inspection of the logs data revealed the long list of failed ssh login attempts. 
+![Kibana ssh system.auth logs](ELK-Server-Project/kibana_ssh_logs.PNG)
 - Next I accessed one of my web servers and installed the apt `stress`. Upon running the command `sudo stress --cpu 1`, under metrics, I could see the cpu usage on that web server go to 100%. In real life, this could be an indicator of a potential breach attempt.
-- To further test the metrics in Kibana, I looped a wget command for approximately 1 minute across all web servers via `while true; do for i in {5..7}; do wget -O /dev/null 10.0.0.$i; done; done`. Upon inspecting the metrics for each VM, I noticed an unusually large spike in incoming and outgoing data. This is another indicator of a potential attempt to breach.
+![Kibanan CPU metric](ELK-Server-Project/kibana_cpu_metric.PNG)
+- To further test the metrics in Kibana, I looped a wget command for approximately 1 minute across all web servers via `while true; do for i in {5..7}; do wget -O /dev/null 10.0.0.$i; done; done`. Upon inspecting the metrics for each VM, I noticed an unusually large spike in outgoing data. This is another indicator of a potential attempt to breach. All three VM had a similar volume of traffic.
+![Kibana network traffic](ELK-Server-Project/kibana_traffic_metric.PNG)
