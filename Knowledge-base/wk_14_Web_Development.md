@@ -338,7 +338,7 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 2. Read the contents of the `ryancookies.txt` file.
 
    - **Question:** How many items exist in this file? There are three cookies in this file.
-  ![Ryan's cookies](/Images/Ryan_cookie.PNG)
+  ![Ryan's cookies](Images/Ryan_cookie.PNG)
 
 
 Note that each one of these is a cookie that was granted to Ryan after logging in.
@@ -356,7 +356,7 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
    **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard. 
     - Yes, there is text that welcomes you to your dashboard and tells you a little about what it does. If you click on the help dropdown arrow in the web browser Dashboard, you will see the exact same text in the 'Overview' section.
-   ![curl dashboard access](/Images/ryan_access_dashboard_curl.PNG)
+   ![curl dashboard access](Images/ryan_access_dashboard_curl.PNG)
 
 #### Step 5: Test the Users.php Page
 
@@ -364,6 +364,6 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
    - ` curl --cookie ./ryancookies.txt http://localhost:8080/wp-admin/users.php`
 
     - **Question:** What happens this time? The page source from the error page is displayed.
-     ![access denied](/Images/ryan_access_denied.PNG)
+     ![access denied](Images/ryan_access_denied.PNG)
 
 ---
