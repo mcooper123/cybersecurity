@@ -5,8 +5,8 @@
 #### Exploit
 Using the dwva, use command injection to view the passwd and hosts file in /etc
 
-![etc/passwd](images/etc-passwd.PNG)
-![etc/hosts](images/etc-hosts.PNG)
+![etc/passwd](Images/etc-passwd.PNG)
+![etc/hosts](Images/etc-hosts.PNG)
 
 #### Mitigation
 The best way to avoid this vulnerability is to not allow the execution of OS commands. However, when this is not possible, properly configured server side input validation will deny access to this vulnerability.
@@ -17,7 +17,7 @@ The best way to avoid this vulnerability is to not allow the execution of OS com
 #### Investigation
 Use the web application tool **Burp Suite**, specifically the **Burp Suite Intruder** feature, to determine if any of the administrator accounts are vulnerable to a brute force attack on this web application. 
 
-![brute-force](images/Brute-force.PNG)
+![brute-force](Images/Brute-force.PNG)
 
 `user: tonystark`
 `Password: "I am Iron Man"`
@@ -38,20 +38,20 @@ There are a number of mitigation methods to prevent brute force attacks, dependi
 
    -  When you attempt to inject this payload,  you will encounter a client-side limitation that will not allow you to enter the whole payload. You will need to find away around this limitation.    
       
-      ![xss-post](images/xss-post-script.PNG)
+      ![xss-post](Images/xss-post-script.PNG)
     
    - Once you are able to hook into Replicants website, attempt a couple BeEF exploits. Some that work well include:
      
      - Social Engineering >> Pretty Theft
-   ![Petty theft](images/xxs-facebook.PNG)
-   ![BeEF facebook credentials](images/xxs-BeEF-facebook.PNG)
+   ![Petty theft](Images/xxs-facebook.PNG)
+   ![BeEF facebook credentials](Images/xxs-BeEF-facebook.PNG)
      
      - Social Engineering >> Fake Notification Bar
-     ![xss fake notification bar](images/xxs-popup.PNG)
-     ![BeEF confirmation of fake notification bar](images/xxs-BeEF-popup.PNG)
+     ![xss fake notification bar](Images/xxs-popup.PNG)
+     ![BeEF confirmation of fake notification bar](Images/xxs-BeEF-popup.PNG)
      
      - Host >> Get Geolocation (Third Party)
-     ![BeEF GeoLocation](images/xxs-BeEF-GeoLocation.PNG)
+     ![BeEF GeoLocation](Images/xxs-BeEF-GeoLocation.PNG)
      
 #### Mitigation
 To mitigate against xss attacks, all user input should be cleansed through the use of escaping, filtering and validation. This can be done on the client side, and **should always** be done on the server side as client side strategies won't be effective against the use of a terminal window to access your website using commands such as cURL.
