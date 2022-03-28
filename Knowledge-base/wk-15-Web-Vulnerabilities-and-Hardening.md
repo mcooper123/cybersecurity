@@ -45,6 +45,7 @@ There are a number of mitigation methods to prevent brute force attacks, dependi
      - Social Engineering >> Pretty Theft
    ![Petty theft](Images/xxs-facebook.PNG)
    ![BeEF facebook credentials](Images/xxs-BeEF-facebook.PNG)
+
      
      - Social Engineering >> Fake Notification Bar
      ![xss fake notification bar](Images/xxs-popup.PNG)
