@@ -128,4 +128,50 @@ During our unit on Cryptography, I was inspired to create an Excel Workbook [Cyp
 - A class activity bonus section required a loop script to run an nslookup with types `A`, `NS` and `mx` respectively. I created the [loop script](./Linux/Loop_nsl.sh) and added some extra formatting and headers in to make the output easier to read.
 
 ### Web Development
-- During the week 14 topic of web development, we learnt about web application architecture and the web client-server model HTTP communication process. The knowledge base developed during this topic can be found [here](/Knowledge-base/wk_14_Web_Development.md).
+During the week 14 topic of web development, we learnt about:
+-  HTTP with Sessions and Cookies
+    - Understand HTTP requests and responses. 
+    - Use the `curl` command-line tool to make GET and POST requests and examine the responses.
+    - Manage cookies using Chrome extensions and `curl`.
+    - Use Chrome's Developer Tools to audit HTTP request and response headers.
+
+- Microservices and Web Application Architecture
+
+  - Understand how microservices and architecture work to deliver more robust, reliable, and repeatable infrastructure as code.
+  - Define the different services within a LEMP stack.
+  - Deploy a Docker Compose container set and test the deployment's functionality.
+  - Describe how relational databases store and retrieve data.
+  - Create SQL queries to view, enter, and delete data
+
+The knowledge base developed during this topic can be found [here](/Knowledge-base/wk_14_Web_Development.md).
+
+
+### Web Vulnerabilities and Hardening
+During the week 15 topic of web vulnerabilities and hardening, we learnt about:
+- Articulate the intended and unintended functionalities of a web application.
+
+- Identify and differentiate between SQL and XSS injection vulnerabilities.
+
+- Design malicious SQL queries using DB Fiddle. 
+
+- Create payloads from the malicious SQL queries to test for SQL injection against a web application.
+
+- Design malicious payloads to test for stored and reflected cross-site scripting vulnerabilities.
+
+- Differentiate between front-end and back-end component vulnerabilities.
+
+- View confidential files with a directory traversal attack by using the dot-slash method.
+
+- Exploit a web application's file upload functionality to conduct a local file inclusion attack.
+
+- Modify a web application's URL to use a malicious remote script to conduct three different remote file inclusion attacks.
+
+- Identify ways in which web application security tools can assist with testing security vulnerabilities.
+
+- Configure Burp Suite and Foxy Proxy to capture and analyze an HTTP request.
+
+- Identify session management vulnerabilities using the Burp Suite Repeater function.
+
+- Conduct a brute force attack against a web application login page with the Burp Intruder function.
+
+The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-15-Web-Vulnerabilities-and-Hardening.md).
