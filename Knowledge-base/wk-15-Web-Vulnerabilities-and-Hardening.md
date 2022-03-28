@@ -43,7 +43,8 @@ There are a number of mitigation methods to prevent brute force attacks, dependi
    - Once you are able to hook into Replicants website, attempt a couple BeEF exploits. Some that work well include:
      
      - Social Engineering >> Pretty Theft
-   ![Petty theft](Images/xxs-facebook.PNG)
+       ![Petty theft](Images/xxs-facebook.PNG)
+
    ![BeEF facebook credentials](Images/xxs-BeEF-facebook.PNG)
 
      
