@@ -43,17 +43,14 @@ There are a number of mitigation methods to prevent brute force attacks, dependi
    - Once you are able to hook into Replicants website, attempt a couple BeEF exploits. Some that work well include:
      
      - Social Engineering >> Pretty Theft    
-       ![Petty theft](Images/xxs-facebook.PNG)
-
-   ![BeEF facebook credentials](Images/xxs-BeEF-facebook.PNG)
-
+       ![Petty theft](Images/xxs-facebook.PNG)   
+       ![BeEF facebook credentials](Images/xxs-BeEF-facebook.PNG)   
+     - Social Engineering >> Fake Notification Bar   
+       ![xss fake notification bar](Images/xxs-popup.PNG)   
+       ![BeEF confirmation of fake notification bar](Images/xxs-BeEF-popup.PNG)   
      
-     - Social Engineering >> Fake Notification Bar
-     ![xss fake notification bar](Images/xxs-popup.PNG)
-     ![BeEF confirmation of fake notification bar](Images/xxs-BeEF-popup.PNG)
-     
-     - Host >> Get Geolocation (Third Party)
-     ![BeEF GeoLocation](Images/xxs-BeEF-GeoLocation.PNG)
+     - Host >> Get Geolocation (Third Party)   
+     ![BeEF GeoLocation](Images/xxs-BeEF-GeoLocation.PNG)   
      
 #### Mitigation
 To mitigate against xss attacks, all user input should be cleansed through the use of escaping, filtering and validation. This can be done on the client side, and **should always** be done on the server side as client side strategies won't be effective against the use of a terminal window to access your website using commands such as cURL.
