@@ -175,3 +175,18 @@ During the week 15 topic of web vulnerabilities and hardening, we learnt about:
 - Conduct a brute force attack against a web application login page with the Burp Intruder function.
 
 The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-15-Web-Vulnerabilities-and-Hardening.md).
+
+### Penetration Testing
+During the week 16 topic of penetration testing, we learnt about:
+- Introduction to Pen Testing and Open Source Intelligence
+- An introduction to pen testing and its business goals.
+- A high-level overview of the various stages of a pentest engagement.
+- Network Discovery and Vulnerability Scanning
+- Perform network enumeration using Nmap.
+- Properly use Nmap options.
+- Explain what the Nmap Scripting Engine (NSE) is and how it's used.
+- Run scripted Shellshock exploits.
+- Consult the Exploit-DB database to research publicly disclosed exploits.
+- Search for exploits and shellcode using SearchSploit.
+
+The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-16-Penetration-Testing.md).
