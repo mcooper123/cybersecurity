@@ -193,7 +193,6 @@ The knowledge base developed during this topic can be found [here](/Knowledge-ba
 
 ### Penetration Testing II
 During the week 17 topic of penetration testing II, we learnt about:
-- Introduction to Metasploit
 - Use Metasploit to assist in various stages of a penetration test. 
 - Use SearchSploit to determine if the targets are vulnerable to exploits. 
 - Use exploit modules from the Metasploit framework to establish a reverse shell on a target.
