@@ -56,7 +56,7 @@ You've been provided full access to the network and are getting ping responses f
 ![icecast](Images/4.Metasploit-Icecast.PNG)
    - Run the command to use the Icecast module:
 
-     > Answer:use 0
+     > Answer: use 0
  <br/>![use-0](Images/4.Metasploit-Icecast-use-0.PNG)
 5. Set the `RHOST` to the target machine.
 
@@ -87,7 +87,7 @@ You've been provided full access to the network and are getting ping responses f
 
     ![Exploit-suggester](Images/8.Exploit_Suggester.PNG)
 
-  `The CEO's computer is also potentially vulnerable to an Ikeext exploit and ms16_075_reflection exploit, with both allowing the attacker to upgrade their user privilege.`
+  The CEO's computer is also potentially vulnerable to an Ikeext exploit and ms16_075_reflection exploit, with both allowing the attacker to upgrade their user privilege.
 
 ### Bonus
   
@@ -115,7 +115,7 @@ B. Open a Meterpreter shell and gather system information for the target.
 C. Run the command that displays the target's computer system information:
 
    > Answer: `sysinfo`
-   ![Sys info](Images/Bonus-sysinfo.PNG)
+ <br/>  ![Sys info](Images/Bonus-sysinfo.PNG)
 
 
 3.	Recommendations
