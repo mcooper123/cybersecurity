@@ -57,7 +57,7 @@ You've been provided full access to the network and are getting ping responses f
    - Run the command to use the Icecast module:
 
      > Answer:use 0
-![use-0](IMages/4.Metasploit-Icecast-use-0.PNG)
+![use-0](Images/4.Metasploit-Icecast-use-0.PNG)
 5. Set the `RHOST` to the target machine.
 
    - Run the command that sets the `RHOST`:
@@ -72,7 +72,7 @@ You've been provided full access to the network and are getting ping responses f
 ![run-exploit](Images/6.Run.PNG)
    - Run the command that performs a search for the `secretfile` textfile on the target.
      > Answer: search -f `*secretfile*`.txt
-![search-secretfile](IMages/6.Search-result.PNG)
+![search-secretfile](Images/6.Search-result.PNG)
 7. You should now have a Meterpreter session open.
 
     - Run the command to performs a search for the `recipe` textfile on the target:
