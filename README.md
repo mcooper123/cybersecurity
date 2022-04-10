@@ -190,3 +190,20 @@ During the week 16 topic of penetration testing, we learnt about:
 - Search for exploits and shellcode using SearchSploit.
 
 The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-16-Penetration-Testing.md).
+
+### Penetration Testing II
+During the week 17 topic of penetration testing II, we learnt about:
+    - Introduction to Metasploit
+    - Use Metasploit to assist in various stages of a penetration test. 
+    - Use SearchSploit to determine if the targets are vulnerable to exploits. 
+    - Use exploit modules from the Metasploit framework to establish a reverse shell on a target.
+    - Post Exploitation with Meterpreter 
+    - Establish bind and reverse shells using Ncat.
+    - Set Meterpreter payloads on a target.
+    - Use Meterpreter shells to exfiltrate data from the target machine.
+    - Custom Payloads with msfvenom
+    - Create custom payloads.
+    - Add payloads to websites by altering HTML. 
+    - Assess overall penetration test engagement skills.
+
+The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-17-Penetration-Testing-II-recommendations.md)
