@@ -143,7 +143,7 @@ During the week 14 topic of web development, we learnt about:
   - Describe how relational databases store and retrieve data.
   - Create SQL queries to view, enter, and delete data
 
-The knowledge base developed during this topic can be found [here](/Knowledge-base/wk_14_Web_Development.md).
+The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-14-Web-Development.md).
 
 
 ### Web Vulnerabilities and Hardening
