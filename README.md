@@ -206,3 +206,21 @@ During the week 17 topic of penetration testing II, we learnt about:
 - Assess overall penetration test engagement skills.
 
 The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-17-Penetration-Testing-II-recommendations.md)
+
+### SIEMS
+During the week 18 topic of SIEMS, we learnt about:
+  - Analyse logs and determine the types of data they contain, as well as the types of security events they can help identify.  
+  - Isolate, identify, and correlate fields across raw log files.  
+  - Design a correlation rule that triggers a notification when an event occurs.  
+  - Make informed decisions about which SIEM vendor is best for an organization.  
+- Splunk Searches
+  - Explore and select Splunk add-ons and apps based on project needs.
+  - Upload logs into a Splunk repository.
+  - Write complex SPL queries to analyze specific security situations.
+- Splunk Reports and Alerts
+  - Use SPL commands `stat` and `eval` to create new fields in Splunk.
+  - Schedule statistical reports in Splunk.
+  - Determine baselines of normal activity in order to trigger alerts.
+  - Design and schedule alerts to notify if an attack is occurring.
+
+The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-18-SIEMs.md)
