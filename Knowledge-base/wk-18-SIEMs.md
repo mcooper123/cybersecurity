@@ -115,7 +115,6 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
 4. Design an alert to check the threshold every hour and email the SOC team at SOC@vandalay.com if triggered. 
    ![Alert](Images/3.4Splunk-alert.PNG)
 
-</br>
 ### Utilising machine learning in Splunk
    Alerts based on a hardcoded trigger will ultimately result in higher and higher rates of false positives as the business grows until re-calculated, implementing a dynamic trigger should significantly reduce the occurrence of false positives whilst still providing you with the necessary alerts as required with a reduced requirement of human input. 
 </br>   A better alert utilising MLTK in Splunk would be
