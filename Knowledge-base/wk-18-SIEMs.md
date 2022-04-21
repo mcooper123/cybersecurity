@@ -121,7 +121,7 @@ Not only were web servers taken offline by a DDOS attack, but upload and downloa
 Identifying outliers:
 ![MLTK Outliers](Images/3.3MLTK-Detect-Outliers.PNG)
 </br>
-MLTK triggered alert:
+MLTK triggered alert: </br>
 ![MLTK Alert](Images/3.4MLTK-Splunk-alert.PNG)
 
  
