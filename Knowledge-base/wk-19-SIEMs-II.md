@@ -33,7 +33,7 @@ Note: This is a public-facing windows server that VSI employees access.
  ![User-activity](Images/Part1.1-Affected-Users.PNG) 
 
     - `It appears that the hackers were attempting to brute force access to user_a, and it appears that they succeeded as the logs also show that the account was logged into 11 times during the same time as the attack and a few more times in the early hours of the morning following the initial attack.`</br>
-![User_a-activity](IMages/Part1.1-user_a-activity.PNG) </br>
+![User_a-activity](Images/Part1.1-user_a-activity.PNG) </br>
 ![User_a-logon-activity](Images/Part1.1-user_a-logins.PNG) </br>
     - `To mitigate this, user_a needs to create a stronger password that is not feasible to brute force.`
      </br>
@@ -44,7 +44,7 @@ Note: This is a public-facing windows server that VSI employees access.
 ![User_k-password-resets](Images/Part1.1-user_k-password-resets-attempts.PNG)</br>
 ![User_k-login](Images/Part1.1-user_k-logins.PNG)
 
-    - Some potential global mitigation's for these attacks include:
+    - `Some potential global mitigation's for these attacks include:`
       - `Multi-factor authentication (MFA) would prevent the brute force attacks and the phishing attack. Attackers are starting to find ways to circumvent mfa using phishing attacks and MitM attacks, to add additional security, limiting account logon to specific ip addresses would greatly improve the level of security.`
       - `To mitigate against the resetting of a password attack, they could limit the number of allowed reset attempts per hour to five - Reviewing the data per hour by user shows the maximum reset requests by one user was four, and this only occurred on two occasions. Setting five as the limit should not cause any issues for their users. This was calculated using the normal data from "windows_server_logs.csv".`
 ![password-resets](Images/Part1.1-password-resets-attempt-baseline.PNG)
