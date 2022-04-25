@@ -224,3 +224,20 @@ During the week 18 topic of SIEMS, we learnt about:
   - Design and schedule alerts to notify if an attack is occurring.
 
 The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-18-SIEMs.md)
+
+### SIEMS II
+During the week 19 topic of SIEMS II, we learnt about:
+- Splunk Dashboards and Visualizations:
+  - Create visualizations of single- and multiple-value searches. 
+  - Use the `geostats` and `iplocation` commands to add location-based visualizations to searches. 
+  - Combine multiple visualizations in a single dashboard. 
+  - Modify dashboards with time range input and drilldown capabilities.
+- Splunk Enterprise Security
+  - Use Splunk Enterprise Security to create an investigation of security events.
+  - Differentiate between various advanced security monitoring solutions, such as SOARs, UBAs, and UEBAs, and determine which is appropriate for specific security situations.
+  - Understand how knowledge of SIEM software and Splunk is valued in the information security job market.
+  - Work towards a Splunk certification using the Splunk Fundamentals eLearning program. 
+- Master of the SOC
+  - Complete the Master of the SOC activity. 
+
+The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-19-SIEMs-II.md)
