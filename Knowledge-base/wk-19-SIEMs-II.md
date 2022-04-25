@@ -43,7 +43,7 @@ Note: This is a public-facing windows server that VSI employees access.
 
 - Some potential global mitigation's for these attacks include:
   - Multi-factor authentication (MFA) would prevent the brute force attacks and the phishing attack. Attackers are starting to find ways to circumvent mfa using phishing attacks and MitM attacks, to add additional security, limiting account logon to specific ip addresses would greatly improve the level of security.
-  - To mitigate against the resetting of a password attack, they could limit the number of allowed reset attempts per hour to five - Reviewing the data per hour by user shows the maximum reset requests by one user was four, and this only occurred on two occasions. Setting five as the limit should not cause any issues for their users. This was calculated using the normal data from "windows_server_logs.csv".
+  - To mitigate against the resetting of a password attack, they could limit the number of allowed reset attempts per hour to five. Reviewing the data per hour by user shows the maximum reset requests by one user was four, and this only occurred on two occasions. Setting five as the limit should not cause any issues for their users. This was calculated using the normal data from "windows_server_logs.csv".
 
 ![password-resets](Images/Part1.1-password-resets-attempt-baseline.PNG)
 
