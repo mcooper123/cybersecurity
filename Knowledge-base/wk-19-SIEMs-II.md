@@ -37,14 +37,14 @@ Note: This is a public-facing windows server that VSI employees access.
 ![User_a-logon-activity](Images/Part1.1-user_a-logins.PNG) </br>
     - `To mitigate this, user_a needs to create a stronger password that is not feasible to brute force.`
      </br>
-    - `User_c appears to be the victim of a phishing attack as their account was logged into 302 times and there were no logs indicating the account was locked or even attempted to be accessed with incorrect credentials. Alternatively, user_c could be secretly working for Jobecorp, but this is outside the scope of this investigation.`
+    - `User_c appears to be the victim of a phishing attack as their account was logged into 302 times and there were no logs indicating the account was locked or even attempted to be accessed with incorrect credentials. Alternatively, user_c could be secretly working for Jobecorp, but this is outside the scope of this investigation.` </br>
     - `To mitigate against this, user_c needs to learn how to verify the authenticity of the sender of emails, the links which they contain and the websites which they send the user to. Asking themselves a simple question of "would xyz send me an email asking me this?" could assist them in avoiding future phishing attacks.` 
      </br>
     - `For an unknown reason, the attackers didn't try to brute force their way into user_k's account, maybe they had information suggesting that they use long passwords. This resulted in the attackers attempting to reset user_k's password instead. It appears that they failed, as although there was one successfully logon during the attack, the attackers continued to attempt to reset the password on the account after this one successful logon.`
 ![User_k-password-resets](Images/Part1.1-user_k-password-resets-attempts.PNG)</br>
 ![User_k-login](Images/Part1.1-user_k-logins.PNG)
 
-    - `Some potential global mitigation's for these attacks include:`
+    - Some potential global mitigation's for these attacks include:
       - `Multi-factor authentication (MFA) would prevent the brute force attacks and the phishing attack. Attackers are starting to find ways to circumvent mfa using phishing attacks and MitM attacks, to add additional security, limiting account logon to specific ip addresses would greatly improve the level of security.`
       - `To mitigate against the resetting of a password attack, they could limit the number of allowed reset attempts per hour to five - Reviewing the data per hour by user shows the maximum reset requests by one user was four, and this only occurred on two occasions. Setting five as the limit should not cause any issues for their users. This was calculated using the normal data from "windows_server_logs.csv".`
 ![password-resets](Images/Part1.1-password-resets-attempt-baseline.PNG)
