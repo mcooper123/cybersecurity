@@ -241,3 +241,12 @@ During the week 19 topic of SIEMS II, we learnt about:
   - Complete the Master of the SOC activity. 
 
 The knowledge base developed during this topic can be found [here](/Knowledge-base/wk-19-SIEMs-II.md)
+
+### Project 2 - Red vs Blue
+The second project is a Red Team vs Blue Team scenario where I played both roles of pentester and SOC analyst.
+
+As the Red Team, I attacked a vulnerable VM within my Azure environment, ultimately gaining root access to the machine. As Blue Team, I used Kibana to review logs taken during the pentesting engagement. 
+
+The Google Slides presentation can be found [here](https://docs.google.com/presentation/d/1UIGsuePqEkHGvyv_5SFC34YgMwthNKPxWaf9o5vokzY/edit?usp=sharing).
+
+A PDF of the report can be found [here](/Knowledge-base/Project-2.pdf).
