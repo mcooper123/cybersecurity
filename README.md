@@ -245,7 +245,7 @@ The knowledge base developed during this topic can be found [here](/Knowledge-ba
 ### Project 2 - Red vs Blue
 The second project is a Red Team vs Blue Team scenario where I played both roles of pentester and SOC analyst.
 
-As the Red Team, I attacked a vulnerable VM within my Azure environment, ultimately gaining root access to the machine. As Blue Team, I used Kibana to review logs taken during the pentesting engagement. 
+As the Red Team, I attacked a vulnerable VM within my Azure environment, ultimately generating a reverse shell and capturing the flag on the machine. As Blue Team, I used Kibana to review logs taken during the pentesting engagement. 
 
 The Google Slides presentation can be found [here](https://docs.google.com/presentation/d/1UIGsuePqEkHGvyv_5SFC34YgMwthNKPxWaf9o5vokzY/edit?usp=sharing).
 
