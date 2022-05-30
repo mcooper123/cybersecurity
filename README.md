@@ -250,3 +250,25 @@ As the Red Team, I attacked a vulnerable VM within my Azure environment, ultimat
 The Google Slides presentation can be found [here](https://docs.google.com/presentation/d/1UIGsuePqEkHGvyv_5SFC34YgMwthNKPxWaf9o5vokzY/edit?usp=sharing).
 
 A PDF of the report can be found [here](/Knowledge-base/Project-2.pdf).
+
+### Project 3 - Raven 1
+Our final project involved completing the following tasks:
+- **Days 1 and 2:** Alert and Attacking Target 1
+
+    - Configure alerts in Kibana 
+    - Attack a machine on the network.
+    - Capture the flag on the victim machine.
+
+- **Day 3:** Wireshark Strikes Back
+
+    - Capture network traffic
+    - Investigate a number of suspicious activities
+    - Collect corporate misuse evidence
+    - Work in groups to create a presentation
+
+
+- **Day 4:** Final Group Presentations
+
+    - Complete and submit group presentations
+
+The knowledge base developed during this project can be found [here](/Knowledge-base/Project-3/Project-3.md)
