@@ -41,13 +41,13 @@ You must inspect your traffic capture to answer the following questions:
 1. Find the following information about the machine with IP address `10.0.0.201`:
     - MAC address: `00:16:17:18:66:c8`
     - Windows username: `elmer.blanco`
-</br>
+
       ![UserName](Images/ElmerBlanco.png)
     - Computer OS: `Windows 10`
-</br>
+
       ![OS](Images/OS.png)
 
 2. Which torrent file did the user download?
     - `Betty_Boop_Rythm_on_the_Reservation.avi.torrent`
-</br>
+
       ![Torrent](Images/Torrent.png)
